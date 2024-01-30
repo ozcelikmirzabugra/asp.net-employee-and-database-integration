@@ -1,0 +1,22 @@
+﻿@model employees.Models.Employee
+<h1>Add Employee</h1>
+<form asp-action="Create">
+<div class="mb-3">
+    <label class="form-label">Name</label>
+    <input asp-for="Name" type="text" class="form-control" />
+</div>
+
+<div class="mb-3">
+    <label class="form-label">Email</label>
+    <input asp-for="Email" type="text" class="form-control" />
+</div>
+
+<div class="mb-3">
+    <label class="form-label">Phone</label>
+    <input asp-for="Phone" type="text" class="form-control" />
+</div>
+
+<div class="mb-3">
+    <input type="submit" class="btn btn-primary" value="Save">
+</div>
+</form>
